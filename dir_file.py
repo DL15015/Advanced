@@ -49,7 +49,9 @@ print(time.ctime(now))
 
 # 如果要得到某个目录下所有文件的全路径可以这样
 dir = "python"
-for (dirpath, dirnames, filenames) in os.walk(dir):
-    for fn in filenames:
-        fpath = os.path.join(dirpath, fn)
-        print(fpath)
+# for (dirpath, dirnames, filenames) in os.walk(dir):
+#     for fn in filenames:
+#         fpath = os.path.join(dirpath, fn)
+#         print(fpath)
+files = os.listdir(dir)
+print(files)
