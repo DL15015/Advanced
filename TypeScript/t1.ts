@@ -29,9 +29,8 @@ let arr1: Array<number> = [1, 2, 9];
 
 //元组
 let x: [string, number];
-x = ["刘海", 2];
-// x=[12,'刘海']
-// console.log(x[1]);
+x = ["刘海", 2]; // x=[12,'刘海']报错
+console.log(x[0].substr(1));
 
 //枚举 	enum    枚举类型用于定义数值集合。
 enum Color {
@@ -43,8 +42,8 @@ let c: Color = Color.Blue;
 // console.log(c);
 
 //  void	用于标识方法返回值的类型，表示该方法没有返回值。
-function hello(): void {
-  alert("hello world!");
-}
+// function hello(): void {
+//   alert("hello world!");
+// }
 // let hh=hello()
 // console.log(hh)
